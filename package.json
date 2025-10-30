@@ -9,7 +9,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix"
+    "lint:fix": "eslint . --ext .js --fix",
+    "save": "git add . && git commit -m \"Auto-save checkpoint: $(date)\" && git push && echo \"📄 Checkpoint created: $(date)\" > checkpoint_$(date +%Y%m%d_%H%M%S).txt && echo \"✅ All changes saved, committed, pushed, and checkpoint created!\""
   },
   "keywords": [
     "express",
