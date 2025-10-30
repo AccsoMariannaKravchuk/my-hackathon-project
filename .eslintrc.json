@@ -4,11 +4,7 @@
     "jest": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:node/recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module"
@@ -23,7 +19,8 @@
     {
       "files": ["tests/**/*.js"],
       "rules": {
-        "no-console": "off"
+        "no-console": "off",
+        "node/no-unpublished-require": "off"
       }
     }
   ]
